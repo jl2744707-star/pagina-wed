@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="../css/principal.css">
+</head>
+<body>
+    <div class="login-container">
+    <form action="">
+        <h2>Iniciar Sesión</h2>
+        <label for="usu">Ingrese su Usuario:</label>
+        <input type="text" name="usu" id="usu">
+        <br><br>
+        <label for="contr">Ingrese su contraseña:</label>
+        <input type="password" name="contr" id="contr">
+        <br><br>
+        <button type="button" onclick="Poner()"><strong>Iniciar Sesion</strong></button>
+        <br><br>
+        <button type="button" onclick="window.location.href='registro.html'"><strong>Registrarse como nuevo usuario</strong></button>
+        </div>
+
+        <script>
+        function Poner(){ 
+
+        let fas = "admin";
+        let gas = "profecional";
+        let has = "paciente";
+        let ias = "admin";
+
+        let num4 = document.getElementById("usu").value;
+
+        let num5 = document.getElementById("contr").value;
+
+        if (num4 == fas && num5 == ias){
+        window.location.href = "admin.html"
+        }
+        else if (num4 == gas && num5 == ias){
+        window.location.href = "profecional.html"
+        }
+        else if (num4 == has && num5 == ias){ 
+        window.location.href = "paciente.html"
+        }
+        else{
+        alert("No corresponde a ningun usuario");
+        }
+        }
+        </script>
+
+    </form>
+</body>
+
+</html>

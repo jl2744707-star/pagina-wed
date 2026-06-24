@@ -1,0 +1,64 @@
+header {
+    background-image: 
+    linear-gradient(to right, rgba(2,6,23,0.9), rgba(30,58,138,0.6)),
+    url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+}
+main {
+     background-color: #1e293b;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(240, 238, 238, 0.5);
+}
+h1 {
+    color: #60a5fa;
+}
+p{
+	color: #ffffff;
+}
+.btn-volver {
+    
+    background-color: #ef4444;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.btn-volver:hover {
+    background-color: #b91c1c;
+    transform: scale(1.05);
+}
+.menu {
+    background: linear-gradient(180deg, #020617, #1e293b);
+    padding: 15px;
+}
+
+.item {
+    display: block;
+    background-color: #1e293b;
+    color: #e2e8f0;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
+}
+.item:hover {
+    background-color: #3b82f6;
+    color: white;
+    transform: scale(1.05);
+}
+* {
+    font-family: Arial, sans-serif;
+}

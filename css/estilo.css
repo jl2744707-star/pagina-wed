@@ -1,3 +1,6 @@
+/*
+en esta parte modificamos el banner 
+*/
 header {
     background-image: 
     linear-gradient(to right, rgba(2,6,23,0.9), rgba(30,58,138,0.6)),
@@ -6,6 +9,9 @@ header {
     background-position: center;
     height: 120px;
 }
+/*
+modificamos la pagina principal el recuadro que vemos 
+*/
 main {
      background-color: #1e293b;
     padding: 20px;
@@ -19,6 +25,9 @@ h1 {
 p{
 	color: #ffffff;
 }
+/*
+
+*/
 .btn-volver {
     
     background-color: #ef4444;

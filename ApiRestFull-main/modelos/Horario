@@ -1,0 +1,32 @@
+// Importar la conexion a la base de datos
+const sequelize = require("../config");
+// Importar DataTypes de Sequelize
+const { DataTypes } = require ('sequelize');
+// Definir el modelo de Usuario
+const Horario = sequelize.define("Horario", {
+    id_horario: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
+        allowNull: false
+    },
+    id_profesional: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+       
+    },
+    dia: {
+        type: DataTypes.STRING(15),
+        allowNull: false
+    },
+    hora_inicio: {
+        type: DataTypes.TIME,
+        allowNull: false
+    },
+    hora_fin: {
+        type: DataTypes.TIME,
+        allowNull: false
+    }        
+});
+
+module.exports = Horario;
